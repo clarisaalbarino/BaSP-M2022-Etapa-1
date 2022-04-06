@@ -1,6 +1,6 @@
 /* body backgrounds and main */
 body{
-    background-color: #AACE9B;
+    background-color: #ffffff;
     font-family: ´roboto´, sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -8,21 +8,26 @@ body{
     text-align: center;
     color: #373867;
 }
-body > main {
+main {
     background-color: #FFFFFF;
-    width: 1140px;
+    width: 100%;
+    max-width: 1620px;
     margin-left: 300px;
+    margin-right: 0;
+    margin-top: 90px;
+}
+main section{
+    height: 2000px;
+    background-color: #ffffff;
 }
 header {
-    display: block;
     position: fixed;
-    background-color: #373867;
     width: 100%;
-    height: 91px;
+    height: 90px;
+    min-height: 71px;
     top: 0;
-    margin: 0;
-    z-index: 3;
-    text-align: center;
+    z-index: 100;
+    background-color: #373867;
 }
 header img{
     width: 55px;
@@ -33,37 +38,51 @@ header img{
     top: 28px;
 }
 nav {
-    /* Side bar */
-
-
-position:absolute;
-width: 308px;
-height: 832px;
-left: 0px;
-top: 0px;
-float: left;
-background: #AACE9B
-}
-footer {
-    width: 100%;
-    height: 104px;
-    display: block;
     position: fixed;
-    background-color: #373867;
+    width: 300px;
+    height: auto;
+    top: 9.5%;
+    left: 0;
+    bottom: 10%;
+    background-color: #aace98
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    padding: 2px;
     bottom: 0;
-    z-index: 3;
+    background-color: #373867;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    color: #aace98;
 }
 nav li {
-    border: 1px solid #FFFFFF;
-    padding: 8px;
-    background-color: #FFFFFF;
-    color: #ffffff;
+    width: 240px;
+    padding: 6px;
+    bottom: 50%;
+    text-align: left;
+}
+nav a {
+    display: block;
+    width: 225px;
+    margin: 25px 2px;
+    padding: 7px 4px;
+    background-color: #ffffff;
+    font-size: 17px;
     text-decoration: none;
-    text-transform: uppercase; 
-    font-family: 'roboto', sans-serif;
-    width: 241px;
-    height: 36px;
-    left: 32px;
-    top: 438px;
-    box-shadow: 0px 2px 0px #373867;
+    box-shadow: 0px 3px 0
+}
+.logo{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    vertical-align: middle;
+}
+#homepage {
+    background-image: url(../assets/background-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
